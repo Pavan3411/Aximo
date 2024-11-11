@@ -1,0 +1,5 @@
+[{
+    "Demo": ["Design Agency","Startup Agency", "SEO Agency","Business Consultation", "Digital Marketing", "Interior Design Agency", "Advertising Agency","IT Agency","Social Market Agency"],
+    "Pages":["Services", "Projects", "Team", "Utility", "Authentication", "Pricing","FAQ's", "Testimonial"],
+    "Blog": ["Blog 1","Blog 2","Blog 3","Blog 4","Blog Details"]
+}]

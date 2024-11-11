@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&family=Syne:wght@400..800&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.contact {
+  box-shadow: 3px 3px white;
+}
+.contact:hover {
+  box-shadow: none;
+}
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+.scrolling {
+  animation: fadeInDown 0.9s 1;
+  backdrop-filter: blur(4px);
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+.boxes {
+  box-shadow: 1px 1px rgb(0, 0, 0);
+}
+.boxes:hover {
+  box-shadow: 4px 4px rgb(0, 0, 0);
+}
+.arrow {
+  animation: 4s linear 1s arrowBlack;
+  position: relative;
+}
+@keyframes arrowBlack {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 25px;
+  }
+}
+.arrow:hover {
+  animation: arrowBlack 1s linear 1 forwards;
+}
+
+.slide {
+  animation: slideIn 15s linear infinite;
+  position: relative;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.icons:hover {
+  box-shadow: 2px 2px 2px #fff;
+}
+
+.placeholder-style {
+  color: rgb(185, 196, 207);
+  font-size: x-large;
+  opacity: 0.7;
+  letter-spacing: 0.05em;
+}
